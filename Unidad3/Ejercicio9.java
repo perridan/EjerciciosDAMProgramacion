@@ -19,8 +19,7 @@ public class Ejercicio9 {
         System.out.println("El ángulo en grados ajustado es: " + grados + "°");
         System.out.println("El equivalente en radianes es: " + radianes + " radianes");
 
-
         scanner.close();
-}
-        
+    }
+
 }

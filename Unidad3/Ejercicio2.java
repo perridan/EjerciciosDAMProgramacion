@@ -19,6 +19,7 @@ public class Ejercicio2 {
         {
             System.out.println("El DNI tiene que tener 8 digitos");
         }
+        scanner.close();
 
         
     }
