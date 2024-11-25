@@ -1,0 +1,29 @@
+a) Indica los objetos o instancias que aparecen (solo el nombre).  
+    Powerins
+    Prometis
+    Rangers
+    Paco Perez
+b) ¿Qué clases (nombre) identificas?  
+    Equipos
+    Jugadores
+c) Por cada una de las clases indicadas en el apartado «b», señala sus atributos y métodos 
+según lo que dice el texto.  
+    Equipos
+        - nombre
+        - fechaFundación  
+        - presupuesto 
+        - dirección
+        * pagaSalario()
+        * ficharJugador(jugador)
+    Jugadores
+        - dorsal
+        - nombre  
+        - salario
+        - equipo
+        * cobraSalario()
+        * juega()
+d) Para cada objeto identificado en el apartado «a», indica a qué clase de las mencionadas 
+en el apartado «b» pertenece.  
+
+e) Para cada objeto indica el valor que tienen los atributos de la clase a la que pertenece. Si 
+para un atributo no se indica el valor en el texto, señala «Unknown». 
