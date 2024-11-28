@@ -4,6 +4,11 @@ import rechautils.Validators;
 
 public class Calculadora {
 
+    public Calculadora() {
+
+    }
+
+
     double suma(double num1, double num2) {
         double operacion;
         operacion = num1 + num2;

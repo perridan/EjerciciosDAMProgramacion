@@ -22,6 +22,29 @@ public class Validators {
 
     }
 
+    // Sobrecarga que limita si esta en un rango determinado
+    public static double doubleValidados(Scanner scanner, double min, double max) {
+        double resultado = 0.0;
+
+        while (true) {
+            if (!scanner.hasNextDouble()) {
+                System.out.println("introduce un double correcto");
+                scanner.next();
+
+            } else {
+                resultado = scanner.nextDouble();
+                if (isInRange(resultado, min, max)) {
+                    break;
+
+                } else {
+                    System.out.println("no esta en rango");
+                }
+            }
+        }
+        return resultado;
+
+    }
+
     // valida que solo se pueda introducir int
     public static int intValidado(Scanner scanner) {
         int resultado = 0;
@@ -34,6 +57,29 @@ public class Validators {
             } else {
                 resultado = scanner.nextInt();
                 break;
+            }
+        }
+        return resultado;
+
+    }
+
+    // version que el numero este en un rango determinado.
+    public static int intValidado(Scanner scanner, int min, int max) {
+        int resultado = 0;
+
+        while (true) {
+            if (!scanner.hasNextInt()) {
+                System.out.println("introduce un int correcto");
+                scanner.next();
+
+            } else {
+                resultado = scanner.nextInt();
+                if (isInRangeInt(resultado, min, max)) {
+                    break;
+                } else {
+                    System.out.println("el numero no esta en rango");
+                }
+
             }
         }
         return resultado;
@@ -109,9 +155,22 @@ public class Validators {
 
     // public static String validaString(Scanner scanner)
     // {
-    //     scanner.hasnext
-    //     String string = "0";
-    //     return string;
+    // scanner.hasnext
+    // String string = "0";
+    // return string;
 
     // }
+
+    // Esta en rango
+    public static boolean isInRange(double number, double min, double max) {
+        boolean result;
+        result = !(number < min || number > max);
+        return result;
+    }
+
+    public static boolean isInRangeInt(int number, int min, int max) {
+        boolean result;
+        result = !(number < min || number > max);
+        return result;
+    }
 }

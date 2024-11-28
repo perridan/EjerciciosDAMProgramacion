@@ -9,6 +9,9 @@ public class Vehiculo {
         this.numeroDeRuedas = numeroDeRuedas;
         this.estado = estado;
     }
+    public Vehiculo (String tipo){
+         this("Coche", 4, "nuevo");
+    }
 
     void mostrarDetalles() {
         System.out.printf("el vehiculo es del tipo %s tiene %d ruedas y su estado %s",tipo, numeroDeRuedas, estado);

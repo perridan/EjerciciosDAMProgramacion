@@ -18,6 +18,10 @@ public class Cine {
         this.ciudad = ciudad;
     }
 
+    public Cine(String nombre) {
+        this(nombre, "Madrid", 0);
+    }
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("introduce el nombre del cine:");
