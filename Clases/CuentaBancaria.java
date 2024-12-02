@@ -13,6 +13,9 @@ public class CuentaBancaria {
         this.titular = titular;
 
     }
+    public CuentaBancaria(int numerodecuenta, String titular){
+        this(numerodecuenta, 0, titular);
+    }
 
     void depositar(int cantidad) {
         saldo += cantidad;

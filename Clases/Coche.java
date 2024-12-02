@@ -15,6 +15,11 @@ public class Coche {
         this.anyo= anyo;
 
     }
+    public Coche(int anyo){
+       this("Ibiza", anyo);
+       
+
+    }
 
     public void arrancar() {
         System.out.println("arranca el coche " + marca + " modelo " + modelo + " del año " + anyo);

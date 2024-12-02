@@ -1,5 +1,4 @@
 
-
 public class Rectangulo {
     double ancho;
     double alto;
@@ -7,6 +6,10 @@ public class Rectangulo {
     public Rectangulo(double ancho, double alto) {
         this.ancho = ancho;
         this.alto = alto;
+    }
+
+    public Rectangulo(double ancho) {
+        this(ancho, ancho);
     }
 
     public void calculaArea() {
