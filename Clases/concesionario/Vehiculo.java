@@ -5,6 +5,7 @@ public class Vehiculo {
     String matricula;
     private double kilometraje;
     private static String nombreEmpresa;
+    Vendedor vendedor;
 
     public Vehiculo(String matricula) {
         this("", matricula);
