@@ -26,5 +26,6 @@ public class Biblioteca {
         libro2.muestraInformacion();
         libro3.muestraInformacion();
         libro4.muestraInformacion();
+        //cambio
     }
 }
