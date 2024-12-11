@@ -1,6 +1,6 @@
 package biblioteca;
 
-public class AppBiblioteca {
+public class Biblioteca {
 
     public static void main(String[] args) {
         Autor autor = new Autor("Juan", "juan@gmail.com");
@@ -26,6 +26,5 @@ public class AppBiblioteca {
         libro2.muestraInformacion();
         libro3.muestraInformacion();
         libro4.muestraInformacion();
-
     }
 }
