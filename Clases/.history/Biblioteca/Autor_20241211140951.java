@@ -1,4 +1,3 @@
-package biblioteca;
 
 public class Autor {
 
@@ -9,6 +8,7 @@ public class Autor {
     public Autor(String nombre, String email) {
         this.nombre = nombre;
         this.email = email;
+
     }
 
     void anadirLibro(int numero) {
