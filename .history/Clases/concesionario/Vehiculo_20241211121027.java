@@ -25,21 +25,4 @@ public class Vehiculo {
         nombreEmpresa = nombre;
 
     }
-    public void incrementaKilometraje(double kilometraje) {
-        this.kilometraje += kilometraje;
-    }
-    public void setVendedor(Vendedor vendedor) {
-        this.vendedor = vendedor;
-    }
-
-    public void muestraInformacion() {
-        System.out.println("Marca: " + marca);
-        System.out.println("Matricula: " + matricula);
-        System.out.println("Kilometraje: " + kilometraje);
-        System.out.println("Empresa: " + nombreEmpresa);
-        if (vendedor != null) {
-            vendedor.muestraInformacion();
-        }
-       
-    }
 }

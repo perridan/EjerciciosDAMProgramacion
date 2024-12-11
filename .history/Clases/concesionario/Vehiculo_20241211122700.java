@@ -37,9 +37,9 @@ public class Vehiculo {
         System.out.println("Matricula: " + matricula);
         System.out.println("Kilometraje: " + kilometraje);
         System.out.println("Empresa: " + nombreEmpresa);
-        if (vendedor != null) {
-            vendedor.muestraInformacion();
-        }
-       
+        System.out.println("Vendedor: " + vendedor.vendedor);
+        System.out.println("Telefono: " + vendedor.telefono);
+        System.out.println("Email: " + vendedor.getEmailVendedor());
+        System.out.println("Kilometraje: " + vendedor.limiteKilometraje);
     }
 }

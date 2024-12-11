@@ -20,11 +20,5 @@ public class Vendedor {
     public String getEmailVendedor() {
         return emailVendedor;
     }
-    public void muestraInformacion() {
-        System.out.println("Vendedor: " + vendedor);
-        System.out.println("Telefono: " + telefono);
-        System.out.println("Email: " + emailVendedor);
-        System.out.println("Kilometraje: " + limiteKilometraje);
-    }
     
 }
