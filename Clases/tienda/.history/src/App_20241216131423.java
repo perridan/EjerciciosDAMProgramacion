@@ -19,7 +19,6 @@ public class App {
         compra = new Compra(producto, cliente, 20);
         compra.realizarCompra();
         cliente.muestraInformacion();
-        //recarga de saldo
         cliente.actuazarSaldo(100, false);
         cliente.muestraInformacion();
     }

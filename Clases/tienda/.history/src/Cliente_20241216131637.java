@@ -40,7 +40,6 @@ public class Cliente {
             this.saldo += nuevoSaldo;
             saldoCambiado = true;
         }
-
         return saldoCambiado;
 
     }
