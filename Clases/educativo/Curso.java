@@ -33,6 +33,8 @@ public class Curso {
         System.out.println("Codigo: " + codigo);
         profesor.muestraInfo();
         System.out.println("Aula: " + aula.nombre);
+        System.out.println("");
+
     }
 
 }

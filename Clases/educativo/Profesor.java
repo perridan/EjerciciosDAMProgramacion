@@ -20,6 +20,7 @@ public class Profesor {
         System.out.println("Nombre: " + nombre);
         System.out.println("Especialidad: " + especialidad);
         System.out.println("Cursos asignados: " + cursosAsignados);
+        System.out.println("");
     }
 
 }

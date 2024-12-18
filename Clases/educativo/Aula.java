@@ -25,6 +25,8 @@ public class Aula {
         System.out.println("Nombre: " + nombre);
         System.out.println("Planta: " + planta);
         System.out.println("Ocupacion: " + ocupacion);
+        System.out.println("");
+
     }
 
 }
