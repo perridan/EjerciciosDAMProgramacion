@@ -1,5 +1,6 @@
 import java.time.LocalDateTime;
 import java.util.Scanner;
+import rechautils.Validators;
 
 class Texto {
     private StringBuilder contenido;
@@ -76,20 +77,44 @@ class Texto {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Texto texto = new Texto(24);
-        texto.anadirCadena("hola que tal", true);
-        texto.muestraInformacion();
-        texto.addCharacter(rechautils.Validators.validarChar(scanner), false);
-        texto.muestraInformacion();
-        texto.anadirCadena(scanner.next(), true);
-        texto.muestraInformacion();
 
+        menu(scanner, texto);
     }
 
     public void muestraInformacion() {
         CuentaVocales(contenido);
         System.out.printf(
-                "La cadena es %s la longitud maxima no debe pasar de %d, tiene %d \n y tiene %d vocales\n la fecha de creacion es %s y la de modificacion es %s\n ",
+                "La cadena es \"%s\" la longitud maxima no debe pasar de %d, tiene %d \n y tiene %d vocales\n la fecha de creacion es %s y la de modificacion es %s\n ",
                 contenido, longitudMaxima, contenido.length(), contador, fechaCreacion.toString(),
                 ultimaModificacion.toString());
+    }
+
+    public static void menu(Scanner scanner, Texto texto) {
+        while (true) {
+            System.out.println("SELECCIONA UNA OCIPCION:");
+            System.out.println("OPCION 1 AÑADIR CARACTER");
+            System.out.println("OPCION 2 AÑADIR CADENA");
+            System.out.println("OPCION 3 SALIR");
+
+            
+            switch (Validators.intValidado(scanner)) {
+                case 1:
+                    texto.addCharacter(rechautils.Validators.validarChar(scanner), false);
+
+                    break;
+                case 2:
+                    texto.anadirCadena(scanner.next(), true);
+                    break;
+                case 3:
+                    scanner.close();
+                    System.exit(0);
+
+                default:
+                    System.out.println("Opcion incorrecta");
+                    break;
+            }
+            texto.muestraInformacion();
+        }
+
     }
 }

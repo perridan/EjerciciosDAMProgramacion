@@ -3,6 +3,7 @@ package educativo;
 public class AppEducativa {
 
     public static void main(String[] args) {
+        ClearScreen.clear();
         Profesor profesor1 = new Profesor("Javier", "Ingenieria");
         profesor1.muestraInfo();
 
@@ -19,6 +20,7 @@ public class AppEducativa {
         curso1.muestraInfo();
         curso2.muestraInfo();
         curso3.muestraInfo();
-        
+
+
     }
 }
