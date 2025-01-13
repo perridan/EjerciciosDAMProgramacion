@@ -14,6 +14,7 @@ public class Ejercicio5 {
         for (int i = enteros.length - 1; i >= 0; i--) {
             System.out.println("introuce 5 números decimales ");
             enteros[i] = Validators.intValidado(scanner);
+            
 
         }
         System.out.println("los números que has introducido son " + Arrays.toString(enteros));
