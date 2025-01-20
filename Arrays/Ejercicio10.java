@@ -12,7 +12,7 @@ public class Ejercicio10 {
         String entrada = scanner.nextLine().toLowerCase();
         int position = -1;
         for (int i = 0; i < meses.length; i++) {
-            if (entrada.contains(meses[i])) {
+            if (entrada.equals(meses[i])) {
                 position = i;
                 break;
             }
