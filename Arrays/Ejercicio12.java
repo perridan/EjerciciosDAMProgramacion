@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Ejercicio12 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        String[] ciudades = { "madrid", "paris", "londres", "tokio", "california" };
+        String[] ciudades = { "madrid", "paris", "londres", "tokio", "california", "madrid", "madrid", "tokio", "california","londres" };
         Arrays.sort(ciudades);
 
         while (true) {
@@ -22,11 +22,32 @@ public class Ejercicio12 {
                 } else {
                     System.out.printf("la ciudad encontrada es %s y esta en la posicion %d \n", ciudades[position],
                             position);
+                    contadores(ciudades, entrada);
                 }
 
             }
 
         }
 
+    }
+
+    static void contadores(String[] ciudades, String ciudad) {
+        int primeraOcurrencia = 0;
+        boolean primeraOcurrenciaEncontrada = false;
+        int ultimaOcurrencia = 0;
+        int contador = 0;
+        for (int i = 0; i < ciudades.length; i++) {
+            if (ciudad.equals(ciudades[i])) {
+                contador++;
+                if (!primeraOcurrenciaEncontrada) {
+                    primeraOcurrencia = i;
+                    primeraOcurrenciaEncontrada = true;
+                }
+                ultimaOcurrencia = i;
+            }
+
+        }
+        System.out.printf("la ciudad %s ha sido encontrada %d la primera vez fue %d y la ultima fue %d \n ", ciudad,
+                contador, primeraOcurrencia, ultimaOcurrencia);
     }
 }
