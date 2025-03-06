@@ -16,7 +16,7 @@ public class Ejercicio14 {
         // contamos los elementos
         int contador = 1;
         // primer elemento del array, ese nunca será duplicado
-        arrayConDuplicados[0] = arrayCopy[0];
+        arrayCopy[0]=arrayConDuplicados[0];
         // buscamos duplicados
         for (int i = 1; i < arrayConDuplicados.length; i++) {
 
@@ -24,14 +24,15 @@ public class Ejercicio14 {
                 System.out.println("valor duplicado");
 
             } else {
-                arrayConDuplicados[i] = arrayCopy[contador];
+                arrayCopy[contador]=arrayConDuplicados[i];
                 contador++;
                 System.out.println("valor no duplicado"+ contador);
 
             }
 
         }
-
-        return arrayCopy;
+        //creo un array todos los elementos del array al 
+        int[] arrayDimensionado = Arrays.copyOf(arrayCopy, contador);
+        return arrayDimensionado;
     }
 }
